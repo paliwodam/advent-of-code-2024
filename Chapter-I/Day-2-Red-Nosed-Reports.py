@@ -1,9 +1,6 @@
-
-input_file = "Chapter-I/Day-2-Test-Input.txt"
-input_file = "Chapter-I/Day-2-Input.txt"
+input_file = "Chapter-I/Inputs/Day-2-Input.txt"
 
 reports = []
-
 with open(input_file) as file:
     for line in file:
         report = [int(x) for x in line.split()]
@@ -40,4 +37,3 @@ def part2():
         if any([is_safe(report[:i] + report[i+1:]) for i in range(n)]): 
             safe_count += 1
     print(safe_count)
-part2()

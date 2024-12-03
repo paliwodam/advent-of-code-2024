@@ -1,6 +1,6 @@
 
 from collections import Counter
-input_file = "Chapter-I/Day-1-Input.txt"
+input_file = "Chapter-I/Inputs/Day-1-Input.txt"
 
 left_list = []
 right_list = []
@@ -17,7 +17,7 @@ def part1():
     distance = sum(map(lambda x: abs(x[0]-x[1]), zip(left_list, right_list)))
     print(distance)
 
-def part():
+def part2():
     cnt = Counter(right_list)
     similarity_score = sum(map(lambda x: x * cnt[x], left_list))
     print(similarity_score)
