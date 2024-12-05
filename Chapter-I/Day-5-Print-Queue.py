@@ -1,6 +1,5 @@
 from collections import defaultdict
 input_file = "Inputs/Chapter-I/Day-5-Input.txt"
-
     
 with open(input_file) as file:
     data = file.read()
